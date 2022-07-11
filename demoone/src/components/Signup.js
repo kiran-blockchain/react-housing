@@ -1,6 +1,6 @@
 import { ErrorMessage, Field, Formik,Form } from "formik";
 import * as Yup from 'yup';
- const Register = (props) => {
+ const Signup = (props) => {
     return (
         <Formik
             initialValues={{
@@ -38,4 +38,4 @@ import * as Yup from 'yup';
         </Formik>
     )
 }
-export default Register;
+export default Signup;

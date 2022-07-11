@@ -1,9 +1,10 @@
 export const housingData = [{
+    id:1000,
     imageUrl: 'https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1600',
     price: 50000,
     location: 'Delhi',
 },
-{
+{   id:1001,
     imageUrl: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600',
     price: 100000,
     location: 'Noida'

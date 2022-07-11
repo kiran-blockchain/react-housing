@@ -9,7 +9,9 @@ import { useState } from "react";
 import Dropdown from "./components/Dropdown";
 import ThemeContext from "./context/themeContext";
 import Layout from "./components/Layout";
-import  Register  from "./components/Register";
+import Register from "./components/Signup";
+import { CustomRouter } from "./router";
+import { Outlet } from "react-router";
 const App = (props) => {
   const companyName = 'Housing.com';
 
@@ -22,14 +24,15 @@ const App = (props) => {
   }
   const [appTheme, setAppTheme] = useState('Light')
   const value = { appTheme, setAppTheme };
-  
+
   return (
 
     <ThemeContext.Provider value={value}>
+
       <div className="container" >
         <Layout>
           <NavBar />
-          <Register/>
+          <Outlet/>
         </Layout>
       </div>
     </ThemeContext.Provider>
